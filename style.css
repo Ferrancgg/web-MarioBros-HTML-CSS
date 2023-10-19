@@ -1,3 +1,10 @@
+:root{
+  --primary:red;
+  --secundary:rgb(89, 87, 87);
+  --fontColor:aliceblue;
+  --backgroundCard:rgba(245, 63, 63, 0.529);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -6,7 +13,7 @@
 }
 h1 {
   font-size: 55px;
-  color: red;
+  color:var(--primary)
 }
 h2 {
   font-size: 40px;
@@ -49,8 +56,10 @@ img {
 header {
   height: 40px;
   display: flex;
-  background-color: rgb(89, 87, 87);
-  color: aliceblue;
+  /* background-color: rgb(89, 87, 87); */
+  background-color: var(--secundary);
+  /* color: aliceblue; */
+  color: var(--fontColor);
   align-items: center;
   justify-content: space-between;
   padding-left: 20px;
@@ -137,7 +146,8 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  background-color: rgba(245, 63, 63, 0.529);
+  /* background-color: rgba(245, 63, 63, 0.529); */
+  background-color: var(--backgroundCard);
   padding: 20px;
 }
 
@@ -150,7 +160,9 @@ main {
 /* /////////CONSOLAS/// */
 
 .consolas-container {
-  background-color: rgba(245, 63, 63, 0.733);
+  /* background-color: rgba(245, 63, 63, 0.733); */
+  background-color: var(--backgroundCard);
+
   width: 50%;
   display: flex;
   flex-wrap: wrap;
@@ -216,7 +228,7 @@ main {
 
 /* /////FOOTER//// */
 footer {
-  color: aliceblue;
+  color:var(--fontColor);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -242,9 +254,7 @@ footer {
 /* tablet */
 
 @media screen and(min-width:640px) and (max-width: 1280px) {
-  * {
-    background-color: rgb(84, 84, 235);
-  }
+ 
 
 
   .enemigos-img {
@@ -264,7 +274,7 @@ footer {
     justify-content: center;
     height: 200px;
     width: 100%;
-    background-color: aqua;
+   
     line-height: 20px;
   }
 }
